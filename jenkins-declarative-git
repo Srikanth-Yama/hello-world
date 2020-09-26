@@ -6,7 +6,7 @@ pipeline{
          git credentialsId: 'github', url: 'https://github.com/Srikanth-Yama/hello-world'
      }
    }
-   stage("Git Checkout"){
+   stage("Maven Build"){
      steps{
          sh "mvn clean package"
      }
